@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("./font-icon.css");
+*,*::before,*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	/* Colors */
+	--clr-tone-0: #000000;
+	--clr-tone-1: #202020;
+	--clr-tone-2: #404040;
+	--clr-tone-3: #606060;
+	--clr-tone-4: #808080;
+	--clr-tone-5: #a0a0a0;
+	--clr-tone-6: #c0c0c0;
+	--clr-tone-7: #e0e0e0;
+	--clr-tone-8: #ffffff;
+	--clr-link: #0060e0;
+	--clr-success: #208020;
+	--clr-warning: #ffc000;
+	--clr-danger: #c02020;
+	--clr-info: #802080;
+	/* Font-Family */
+	--ff-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",		monospace;
+	--ff-sans: "Roboto", sans-serif;
+	/* Font-Sizes */
+	--fs-logo: 3em       /* .logo        = 48px */;
+	--fs-xlarge: 2.5em   /* h0, .xlarger = 40px */;
+	--fs-large: 2em      /* h1, .larger  = 32px */;
+	--fs-big: 1.5em      /* h2, .big     = 24px */;
+	--fs-medium: 1.25em  /* h3, .medium  = 20px */;
+	--fs-normal: 1em     /* h4, .normal  = 16px */;
+	--fs-small: 0.75em   /* h5, .small   = 12px */;
+	--fs-xsmall: 0.625em /* h6, .xsmall  = 10px */;
+	/* Line-heights ± 24px */
+	--lh-logo: 0.5em   /* .logo */;
+	--lh-xlarge: 0.6em /* h0, .xlarger */;
+	--lh-large: 0.75em /* h1, .larger */;
+	--lh-big: 1em      /* h2, .big */;
+	--lh-medium: 1.2em /* h3, .normal */;
+	--lh-normal: 1.5em /* h4, .normal */;
+	--lh-small: 2em    /* h5, .small */;
+	--lh-xsmall: 2.4em /* h6, .xsmall */;
+	/* Margins */
+	--mb-150: 1.5rem /* margin-bottom: 1.5rem ± 24px */;
+}
+html,body {height: 100%; width: 100%;}
+body {
+	background-color: var(--clr-tone-8);
+	color: var(--clr-tone-0);
+	font: normal var(--fs-normal) / var(--lh-normal) var(--ff-sans);
+	letter-spacing: 0;
+	position: relative;
+	text-rendering: optimizelegibility;
+	word-wrap: break-word;
+	z-index: 0;
+}
+blockquote,figure,.h0,h1,h2,h3,h4,h5,h6,p,ol,ul {margin-bottom: var(--mb-150);}
+.h0,h1,h2,h3,h4,h5,h6 {font-weight: bold;}
+
+.logo {font-size: var(--fs-logo); line-height: var(--lh-logo);}
+.h0,.xlarge {font-size: var(--fs-xlarge); line-height: var(--lh-xlarge);}
+h1,.large {font-size: var(--fs-large); line-height: var(--lh-large);}
+h2,.big {font-size: var(--fs-big); line-height: var(--lh-big);}
+h3,.medium {font-size: var(--fs-medium); line-height: var(--lh-medium);}
+h4,.normal {font-size: var(--fs-normal); line-height: var(--lh-normal);}
+h5,.small {font-size: var(--fs-small); line-height: var(--lh-small);}
+h6,.xsmall {font-size: var(--fs-xsmall); line-height: var(--lh-xsmall);}
+
+hr {
+	border: 0;
+	border-top: 1px solid var(--clr-tone-0);
+	height: 0;
+	margin: var(--mb-150) 0;
+}
+p:last-of-type {margin-bottom: 0;}
+body {
+	background-color: var(--clr-tone-6);
+	color: var(--clr-tone-1);
+}
+header {
+	background-color: var(--clr-tone-1);
+	color: var(--clr-tone-8);
+	min-height: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header * {padding: 0.75rem;}
+.container {
+	background-color: var(--clr-tone-8);
+	margin: 0 auto;
+	padding: 1.5em 0.5em;
+	width: 95%;
+}
+/* Table Columns Width */
+.tw-010 {width: 10%;}
+.tw-015 {width: 15%;}
+.tw-025 {width: 25%;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: inherit;
+	empty-cells: show;
+	margin: 0 auto 1.5em;
+	text-align: center;
+	width: 95%;
+}
+caption {
+	background-color: var(--clr-tone-1);
+	color: var(--clr-tone-8);
+	font: bold italic var(--fs-big) / var(--lh-big) var(--ff-sans);
+	padding: 0.5em;
+	text-align: left;
+}
+tfoot th,tfoot tr td,thead th,thead tr td {font-weight: bold;}
+thead {
+	background-color: var(--clr-tone-3);
+	color: var(--clr-tone-8);
+	font-size: var(--fs-medium);
+	line-height: var(--lh-medium);
+}
+th,td {padding: 0.25em;}
+tr,td {page-break-inside: avoid;}
+thead tr th:nth-child(2n-1) {background-color: var(--clr-tone-2);}
+thead tr th:nth-child(2n) {background-color: var(--clr-tone-3);}
+tbody tr td:nth-child(2n-1) {background-color: var(--clr-tone-7);}
+tbody tr td:nth-child(2n) {background-color: var(--clr-tone-8);}
+tbody tr td:nth-child(1) {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+tbody tr td:nth-child(2) {
+	font-size: var(--fs-big);
+	line-height: var(--lh-big);
+}
+tbody tr td {border-bottom: 1px solid var(--clr-tone-4);}
