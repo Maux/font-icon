@@ -1,0 +1,21 @@
+{
+	"name": "font-icon",
+	"version": "1.0.0",
+	"description": "My custom web font icon",
+	"main": "demo.html",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Maux/font-icon.git"
+	},
+	"keywords": [
+		"webfont",
+		"font",
+		"font-icon"
+	],
+	"author": "Maux <maux.webmaster@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Maux/font-icon/issues"
+	},
+	"homepage": "https://github.com/Maux/font-icon#readme"
+}
