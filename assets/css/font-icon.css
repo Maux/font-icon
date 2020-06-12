@@ -1,33 +1,46 @@
-/*
-	.eot										: IE9+ Compat Modes
-	(.eot?#iefix) format('embedded-opentype')	: IE6-IE8
-	(.woff2) format('woff2')					: Super modern browsers
-    (.woff) format('woff')						: Modern browsers
-	(.ttf) format('truetype')					: Safari, Android, iOS
-	(.svg#FontName) format('svg')				: Legacy iOS
-*/
+/*!
+	* Maux Font Icon 1.0.1 by Maux <maux.webmaster@gmail.com>
+	* License [
+		Icons: CC BY 4.0, 
+		Fonts: SIL OFL 1.1, 
+		Code: MIT License
+	]
+	* Last Release at 2020-06-12 (v.1.0.1)
+ */
 @font-face {
 	font-family: "Maux";
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
 	src: url("../fonts/Maux.eot");
 	src: url("../fonts/Maux.eot?#iefix") format("embedded-opentype"),
 		url("../fonts/Maux.ttf") format("truetype"),
 		url("../fonts/Maux.woff") format("woff"),
 		url("../fonts/Maux.svg#Maux") format("svg");
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
 }
 [data-icon*="icn-"],[data-icon^="icn-"],[class*="icn-"],[class^="icn-"] {
 	font-family: "Maux" !important;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
+	display: inline-block;
 	line-height: 1;
 	/* speak: none; */
+	text-rendering: auto;
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+/* Icon Sizes (Based on Default: 16px) */
+.icn-fs-usmall{font-size: 0.625rem;} /* Ultra Small ± 10px */
+.icn-fs-xsmall{font-size: 0.75rem;}  /* Extra Small ± 12px */
+ .icn-fs-small{font-size: 0.875rem;} /*       Small ± 14px */
+.icn-fs-normal{font-size: 1rem;}     /*      Normal ± 16px */
+.icn-fs-medium{font-size: 1.25rem;}  /*      Medium ± 20px */
+   .icn-fs-big{font-size: 1.5rem;}   /*         Big ± 24px */
+ .icn-fs-large{font-size: 2rem;}     /*       Large ± 32px */
+.icn-fs-xlarge{font-size: 2.5rem;}   /* Extra Large ± 40px */
+.icn-fs-ularge{font-size: 3rem;}     /* Ultra Large ± 48px */
 /* Apps */
 [data-icon="icn-menu"]::before, .icn-menu::before {content: "\e900";}
 [data-icon="icn-close"]::before, .icn-close::before {content: "\e901";}
