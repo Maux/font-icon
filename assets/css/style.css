@@ -8,15 +8,15 @@
 }
 :root {
 	/* Colors */
-	--clr-tone-0: #000000;
-	--clr-tone-1: #202020;
-	--clr-tone-2: #404040;
-	--clr-tone-3: #606060;
-	--clr-tone-4: #808080;
-	--clr-tone-5: #a0a0a0;
-	--clr-tone-6: #c0c0c0;
-	--clr-tone-7: #e0e0e0;
-	--clr-tone-8: #ffffff;
+	--clr-black: #000000;
+	--clr-dark-3: #202020;
+	--clr-dark-2: #404040;
+	--clr-dark-1: #606060;
+	--clr-gray: #808080;
+	--clr-light-1: #a0a0a0;
+	--clr-light-2: #c0c0c0;
+	--clr-light-3: #e0e0e0;
+	--clr-white: #ffffff;
 	--clr-link: #0060e0;
 	--clr-success: #208020;
 	--clr-warning: #ffc000;
@@ -48,8 +48,8 @@
 }
 html,body {height: 100%; width: 100%;}
 body {
-	background-color: var(--clr-tone-8);
-	color: var(--clr-tone-0);
+	background-color: var(--clr-white);
+	color: var(--clr-black);
 	font: normal var(--fs-normal) / var(--lh-normal) var(--ff-sans);
 	letter-spacing: 0;
 	position: relative;
@@ -71,18 +71,18 @@ h6,.xsmall {font-size: var(--fs-xsmall); line-height: var(--lh-xsmall);}
 
 hr {
 	border: 0;
-	border-top: 1px solid var(--clr-tone-0);
+	border-top: 1px solid var(--clr-black);
 	height: 0;
 	margin: var(--mb-150) 0;
 }
 p:last-of-type {margin-bottom: 0;}
 body {
-	background-color: var(--clr-tone-6);
-	color: var(--clr-tone-1);
+	background-color: var(--clr-light-2);
+	color: var(--clr-dark-3);
 }
 header {
-	background-color: var(--clr-tone-1);
-	color: var(--clr-tone-8);
+	background-color: var(--clr-dark-3);
+	color: var(--clr-white);
 	min-height: 4em;
 	display: flex;
 	justify-content: center;
@@ -90,7 +90,7 @@ header {
 }
 header * {padding: 0.75rem;}
 .container {
-	background-color: var(--clr-tone-8);
+	background-color: var(--clr-white);
 	margin: 0 auto;
 	padding: 1.5em 0.5em;
 	width: 95%;
@@ -109,25 +109,25 @@ table {
 	width: 95%;
 }
 caption {
-	background-color: var(--clr-tone-1);
-	color: var(--clr-tone-8);
+	background-color: var(--clr-dark-3);
+	color: var(--clr-white);
 	font: bold italic var(--fs-big) / var(--lh-big) var(--ff-sans);
 	padding: 0.5em;
 	text-align: left;
 }
 tfoot th,tfoot tr td,thead th,thead tr td {font-weight: bold;}
 thead {
-	background-color: var(--clr-tone-3);
-	color: var(--clr-tone-8);
+	background-color: var(--clr-dark-1);
+	color: var(--clr-white);
 	font-size: var(--fs-medium);
 	line-height: var(--lh-medium);
 }
 th,td {padding: 0.25em;}
 tr,td {page-break-inside: avoid;}
-thead tr th:nth-child(2n-1) {background-color: var(--clr-tone-2);}
-thead tr th:nth-child(2n) {background-color: var(--clr-tone-3);}
-tbody tr td:nth-child(2n-1) {background-color: var(--clr-tone-7);}
-tbody tr td:nth-child(2n) {background-color: var(--clr-tone-8);}
+thead tr th:nth-child(2n-1) {background-color: var(--clr-dark-2);}
+thead tr th:nth-child(2n) {background-color: var(--clr-dark-1);}
+tbody tr td:nth-child(2n-1) {background-color: var(--clr-light-3);}
+tbody tr td:nth-child(2n) {background-color: var(--clr-white);}
 tbody tr td:nth-child(1) {
 	font-weight: bold;
 	text-transform: uppercase;
@@ -136,4 +136,4 @@ tbody tr td:nth-child(2) {
 	font-size: var(--fs-big);
 	line-height: var(--lh-big);
 }
-tbody tr td {border-bottom: 1px solid var(--clr-tone-4);}
+tbody tr td {border-bottom: 1px solid var(--clr-gray);}
